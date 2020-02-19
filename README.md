@@ -5,7 +5,7 @@ This package create endpoints for User authentication in Django for a POST metho
 Retrieves a token key used to make an authenticated GET request
 
 Django Api Rest token - Flutter
-BackEnd(Django, Api-Rest Tokend) Android Flutter
+BackEnd(Django, Api-Rest Tokend) 
 
 Comandos Utilizados
 
