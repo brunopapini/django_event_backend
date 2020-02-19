@@ -4,10 +4,31 @@ Backend for mobile app in django.
 This package create endpoints for User authentication in Django for a POST method with User/email and password.
 Retrieves a token key used to make an authenticated GET request
 
+Django Api Rest token - Flutter
+BackEnd(Django, Api-Rest Tokend) Android Flutter
+
+Comandos Utilizados
+
+Crear Aplicacion
+python manage.py Jam app
+
+Crear un Super Usuario
+python src/manage.py createsuperuser
+
+Ejecutar el proyecto
+python src/manage.py runserver 0.0.0.0:8000
+
+Crear migraciones
+python src/manage.py makemigrations
+actualizar base de datos
+python src/manage.py migrate
+
 
 Installed Apps:
 Django rest framework 
 Django rest framework auth
+Jam
+
 
 To runserver local
 
