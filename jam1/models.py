@@ -4,6 +4,7 @@ from django.conf import settings
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
+from location_field.models.plain import PlainLocationField
 
 ##modelos de la aplicacion para jamear##
 
@@ -94,7 +95,7 @@ class Profile(models.Model):
 	jam_place= models.CharField(max_length= 50, choices= choices_jam_place)
 	
 	#ubicacion en la que vive
-	location=models.CharField(max_length=100)
+	location = PlainLocationField(based_fields=['city'], zoom=7)
 
 	#nivel de musica
 	choices_nivel=(('Amateur','Amateur'),('Intermedio', 'Intermedio'), ('Avanzado', 'Avanzado'),('Profesional','Profesional'))	
