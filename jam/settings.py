@@ -140,3 +140,9 @@ REST_FRAMEWORK = {
     #'DEFAULT_PERMISSION_CLASSES': (
     #    'rest_framework.permissions.IsAuthenticated', )
 }
+
+
+LOCATION_FIELD = {
+    'map.provider': 'openstreetmap',
+    'search.provider': 'nominatim',
+}

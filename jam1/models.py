@@ -10,6 +10,9 @@ from location_field.models.plain import PlainLocationField
 
 ##--------MODELO DE EVENTO-------##
 
+
+
+
 class Event(models.Model):
 	#clase que define a los eventos. los mismos son creados por un usuario que invita a otros usuarios.
 
@@ -95,7 +98,9 @@ class Profile(models.Model):
 	jam_place= models.CharField(max_length= 50, choices= choices_jam_place)
 	
 	#ubicacion en la que vive
+	city = models.CharField(max_length=255)
 	location = PlainLocationField(based_fields=['city'], zoom=7)
+
 
 	#nivel de musica
 	choices_nivel=(('Amateur','Amateur'),('Intermedio', 'Intermedio'), ('Avanzado', 'Avanzado'),('Profesional','Profesional'))	
